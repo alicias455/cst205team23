@@ -47,6 +47,7 @@ class MyWindow(QWidget):
     self.line_edit = QLineEdit(self)
     #print(self.line_edit.QLineEdit.text())
     preprocess(image_info)
+    #print(new_dict)
     self.btn = QPushButton("Search")
     self.btn.clicked.connect(self.on_click)
 

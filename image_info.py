@@ -2,7 +2,7 @@ image_info = [
   {
   "id" : "BL001",
   "title" : "MovieShowing",
-  "tags" : ["Brie Larson", "self", "not movie","portrait","actress"]
+  "tags" : ["Brie Larson", "self", "notmovie","portrait","actress"]
   },
   {
   "id" : "BL002",
@@ -40,14 +40,24 @@ image_info = [
   "tags" : ["Chris Evans", "costume", "movie", "avengers","actor"]
   },
   {
+  "id" : "CE002",
+  "title" : "Suit",
+  "tags" : ["Chris Evans", "self", "notmovie", "portrait","actor"]
+  },
+  {
+  "id" : "CE003",
+  "title" : "ChrisandDog",
+  "tags" : ["Chris Evans", "self", "notmovie", "portrait","actor", "dog"]
+  },
+  {
   "id" : "CF001",
   "title" : "White dress",
-  "tags" : ["Carrie Fisher", "self", "not movie","portrait","actress"]
+  "tags" : ["Carrie Fisher", "self", "notmovie","portrait","actress"]
   },
   {
   "id" : "CF002",
   "title" : "Leia",
-  "tags" : ["Carrie Fisher", "self", "not movie","portrait","serious","Star Wars","actress"]
+  "tags" : ["Carrie Fisher", "self", "notmovie","portrait","serious","Star Wars","actress"]
   },
   {
   "id" : "CF003",
@@ -63,38 +73,52 @@ image_info = [
   {
   "id" : "DJ001",
   "title" : "napoleon dynamite",
-  "tags" : ["Dwane Johnson", "self", "not movie","posing","Rock","costume","actor","2000s"]
+  "tags" : ["Dwane Johnson", "self", "notmovie","posing","Rock","costume","actor","2000s"]
   },
   {
   "id" : "DJ002",
   "title" : "The Eyebrow",
-  "tags" : ["Dwane Johnson", "wrestling", "not movie","posing","Rock","actor","90s"]
+  "tags" : ["Dwane Johnson", "wrestling", "notmovie","posing","Rock","actor","90s"]
   },
   {
   "id" : "DJ003",
   "title" : "Dwane",
-  "tags" : ["Dwane Johnson", "self", "not movie","portrait","serious","Rock","actor"]
+  "tags" : ["Dwane Johnson", "self", "notmovie","portrait","serious","Rock","actor"]
   },
   {
   "id" : "DJ004",
   "title" : "The Cast",
   "tags" : ["Dwane Johnson", "Rock", "movie","posing","Jumanji","costume","actor","2000s"]
   },
-
+  {
+  "id" : "EO001",
+  "title" : "White Long Sleeve",
+  "tags" : ["Elizabeth Olsen", "self", "notmovie", "posing","portrait","actress"]
+  },
+  {
+  "id" : "EO002",
+  "title" : "Scarlet Witch",
+  "tags" : ["Elizabeth Olsen", "costume", "movie", "posing","avengers","actress"]
+  },
+  {
+  "id" : "EO003",
+  "title" : "Multiple Characters",
+  "tags" : ["Elizabeth Olsen", "Chadwick Boseman","Mark Ruffalo","Paul Rudd", "costume", "movie", "posing","avengers","actress"]
+  },
   {
   "id" : "GG001",
   "title" : "ComicCon",
-  "tags" : ["Gal Gadot", "self", "not movie","posing","actress"]
+  "tags" : ["Gal Gadot", "self", "notmovie","posing","actress"]
   },
   {
   "id" : "GG002",
   "title" : "The Suit",
-  "tags" : ["Gal Gadot", "self", "not movie","portrait","serious","actress"]
+  "tags" : ["Gal Gadot", "self", "notmovie","portrait","serious","actress"]
   },
   {
   "id" : "GG003",
   "title" : "The smile",
-  "tags" : ["Gal Gadot", "self", "not movie","portrait","smiling","actress"]
+  "tags" : ["Gal Gadot", "self", "notmovie","portrait","smiling","actress"]
   },
   {
   "id" : "GG004",
@@ -105,12 +129,12 @@ image_info = [
   {
   "id" : "KR001",
   "title" : "Thinker",
-  "tags" : ["keanu reeves", "self", "not movie","portrait","serious","actor"]
+  "tags" : ["keanu reeves", "self", "notmovie","portrait","serious","actor"]
   },
   {
   "id" : "KR002",
   "title" : "The Stare",
-  "tags" : ["keanu reeves", "self", "not movie","portrait","serious","actor"]
+  "tags" : ["keanu reeves", "self", "notmovie","portrait","serious","actor"]
   },
   {
   "id" : "KR003",
@@ -122,7 +146,31 @@ image_info = [
   "title" : "NEO",
   "tags" : ["keanu reeves", "costume", "movie","Matrix","actor","90s"]
   },
-
+  {
+  "id" : "RD001",
+  "title" : "In Suit",
+  "tags" : ["Robert Downey Jr", "self", "notmovie","actor"]
+  },
+  {
+  "id" : "RD002",
+  "title" : "Iron Man",
+  "tags" : ["Robert Downey Jr", "Iron Man","costume", "movie","actor"]
+  },
+  {
+  "id" : "RD003",
+  "title" : "Iron Man",
+  "tags" : ["Robert Downey Jr", "Iron Man","costume", "movie","actor"]
+  },
+  {
+  "id" : "RD004",
+  "title" : "Posing",
+  "tags" : ["Robert Downey Jr", "Chris Evans", "Iron Man","costume", "movie","actor"]
+  },
+  {
+  "id" : "RD005",
+  "title" : "Iron Man and others",
+  "tags" : ["Robert Downey Jr", "Chris Hemsworth", "Anthony Mackie", "Iron Man","costume", "movie","actor"]
+  },
   {
   "id" : "RR001",
   "title" : "Free Guy",
@@ -147,12 +195,12 @@ image_info = [
   {
   "id" : "RW001",
   "title" : "The Stare",
-  "tags" : ["Robin Williams", "self", "not movie","portrait","serious","actor"]
+  "tags" : ["Robin Williams", "self", "notmovie","portrait","serious","actor"]
   },
   {
   "id" : "RW002",
   "title" : "Beard",
-  "tags" : ["Robin Williams", "self", "not movie","portrait","actor"]
+  "tags" : ["Robin Williams", "self", "notmovie","portrait","actor"]
   },
   {
   "id" : "RW003",
@@ -211,8 +259,16 @@ image_info = [
   "title" : "The couple",
   "tags" : ["Scarlett Johansson", "portrait", "not movie","actress"]
   },
-
-
+  {
+  "id" : "SJ004",
+  "title" : "Black Widow",
+  "tags" : ["Scarlett Johansson", "Black Widow", "movie","actress", "avengers"]
+  },
+  {
+  "id" : "SJ005",
+  "title" : "Short Hair",
+  "tags" : ["Scarlett Johansson", "portrait", "not movie","actress"]
+  },
   {
   "id" : "TH001",
   "title" : "Burbs",
@@ -231,11 +287,6 @@ image_info = [
   },
   {
   "id" : "TH005",
-  "title" : "Hello",
-  "tags" : ["Tom Hanks", "costume", "movie","Jumanji","actor","80s"]
-  },
-  {
-  "id" : "TH006",
   "title" : "Wilson",
   "tags" : ["Tom Hanks", "costume", "movie", "Cast Away","actor","90s"]
   },
@@ -243,6 +294,6 @@ image_info = [
   {
   "id" : "TH007",
   "title" : "Piano",
-  "tags" : ["Tom Hanks", "movie",Big,"actor","80s"]
+  "tags" : ["Tom Hanks", "movie","Big","actor","80s"]
   },
   ]
