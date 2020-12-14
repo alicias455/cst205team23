@@ -2,9 +2,9 @@ from image_info import image_info
 from pprint import pprint
 from PIL import Image
 import sys
-from PySide2.QtWidgets import (QApplication, QWidget, QLabel, QDialog, QGroupBox, QHBoxLayout, QVBoxLayout, QPushButton, QLineEdit,QComboBox)
+from PySide2.QtWidgets import (QApplication, QWidget, QLabel, QDialog, QGroupBox, QHBoxLayout, QVBoxLayout, QPushButton, QLineEdit,QComboBox, QScrollArea)
 from PySide2.QtCore import Slot, Qt 
-from PySide2.QtGui import QPixmap
+from PySide2.QtGui import QPixmap, QImage, QPalette
 
 #___________________list sorting___________________________
 
@@ -47,6 +47,7 @@ class MyWindow(QWidget):
     self.btn = QPushButton("Search")
     self.btn.clicked.connect(self.on_click)
 
+    self.scrollArea = QScrollArea()
 
     hbox1 = QHBoxLayout()
     hbox1.addWidget(self.label1)
@@ -90,12 +91,20 @@ class MyWindow(QWidget):
         size = len(max_list)
         for i in range(size):
                 #print(i)
-                pixmap = QPixmap(f'images/{max_list[i][1]}.jpg')
-                self.label.setPixmap(pixmap)
-                self.vbox1.addWidget(self.label)
-                self.gbox2.setLayout(self.vbox1)
-                #im = Image.open(f'images/{max_list[i][1]}.jpg')
-                #im.show()
+                # im = Image.open(f'images/{max_list[i][1]}.jpg')
+                # im.show()
+
+                image = QImage(f'images/{max_list[i][1]}.jpg')
+                self.label.setPixmap(QPixmap.fromImage(image))
+                self.scrollArea.setBackgroundRole(QPalette.Dark)
+                self.scrollArea.setWidget(self.label)
+                self.vbox1.addWidget(self.scrollArea)
+
+                # pixmap = QPixmap(f'images/{max_list[i][1]}.jpg')
+                # self.label.setPixmap(pixmap)
+                # self.vbox1.addWidget(self.label)
+                # self.gbox2.setLayout(self.vbox1)
+
                 i += 1
 
 app = QApplication([])
