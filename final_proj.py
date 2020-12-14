@@ -81,18 +81,14 @@ class MyWindow(QWidget):
                             max_list.append((value[1], key))
 
             max_list.sort()
-        #print(max_list)
+
         size = len(max_list)
-        #i = 1
-        #while i < size:
         for i in range(size):
                 print(i)
                 im = Image.open(f'images/{max_list[i][1]}.jpg')
+                im.show()
                 i += 1
 
-        #im = Image.open(f'images/{max_list[0][1]}.jpg')
-        im.show()
-             
 app = QApplication([])
 win = MyWindow()
 win.show()
