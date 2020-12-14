@@ -11,7 +11,7 @@ from PySide2.QtCore import Slot, Qt
 
 #___________________list sorting___________________________
 
-string1 ='scarlett johansson'.lower()
+#string1 ='scarlett johansson'.lower()
 
 new_dict = {}
 
@@ -43,11 +43,9 @@ class MyWindow(QWidget):
   def __init__(self):
     super().__init__()
 
-    self.label1 = QLabel('Enter Celebrity Name: ')
+    self.label1 = QLabel('Enter Celebrity Full Name: ')
     self.line_edit = QLineEdit(self)
-    #print(self.line_edit.QLineEdit.text())
     preprocess(image_info)
-    #print(new_dict)
     self.btn = QPushButton("Search")
     self.btn.clicked.connect(self.on_click)
 
@@ -84,10 +82,17 @@ class MyWindow(QWidget):
 
             max_list.sort()
         #print(max_list)
-        im = Image.open(f'images/{max_list[0][1]}.jpg')
+        size = len(max_list)
+        #i = 1
+        #while i < size:
+        for i in range(size):
+                print(i)
+                im = Image.open(f'images/{max_list[i][1]}.jpg')
+                i += 1
+
+        #im = Image.open(f'images/{max_list[0][1]}.jpg')
         im.show()
              
-
 app = QApplication([])
 win = MyWindow()
 win.show()
