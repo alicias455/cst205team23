@@ -1,3 +1,17 @@
+#CST 205
+#Celebrity Image Search
+#The program allows the user to input a celebrity name and it will provide images found in our "gallery" that conatin this celebrity. If no
+#images are available "No images found." will be displayed.
+#John Mar Shimun, Douglas Pattison, Alicia Sandoval
+#12/14/20
+#John created the image_info file and input the images info
+#Alicia focused on getting the images to display correctly
+#Douglas debugged and researched potential APIs
+#preprocess simplifies the image_info file
+#MyWindow creates the GUI
+#the on_click method creates an array based on the words that were typed in by the user and then using this array we display all the images 
+#available in the array.
+
 from image_info import image_info
 from pprint import pprint
 from PIL import Image
@@ -43,11 +57,12 @@ class MyWindow(QWidget):
     preprocess(image_info)
 
     self.label = QLabel()
+    self.label2 = QLabel("No images found.")
 
     self.btn = QPushButton("Search")
     self.btn.clicked.connect(self.on_click)
 
-    self.scrollArea = QScrollArea()
+    #self.scrollArea = QScrollArea()
 
     hbox1 = QHBoxLayout()
     hbox1.addWidget(self.label1)
@@ -89,16 +104,22 @@ class MyWindow(QWidget):
             max_list.sort()
 
         size = len(max_list)
+
+        if size == 0:
+            self.vbox1.addWidget(self.label2)
+            self.gbox2.setLayout(self.vbox1)
+            #print("No images found.")
+
         for i in range(size):
                 #print(i)
-                # im = Image.open(f'images/{max_list[i][1]}.jpg')
-                # im.show()
+                im = Image.open(f'images/{max_list[i][1]}.jpg')
+                im.show()
 
-                image = QImage(f'images/{max_list[i][1]}.jpg')
-                self.label.setPixmap(QPixmap.fromImage(image))
-                self.scrollArea.setBackgroundRole(QPalette.Dark)
-                self.scrollArea.setWidget(self.label)
-                self.vbox1.addWidget(self.scrollArea)
+                # image = QImage(f'images/{max_list[i][1]}.jpg')
+                # self.label.setPixmap(QPixmap.fromImage(image))
+                # self.scrollArea.setBackgroundRole(QPalette.Dark)
+                # self.scrollArea.setWidget(self.label)
+                # self.vbox1.addWidget(self.scrollArea)
 
                 # pixmap = QPixmap(f'images/{max_list[i][1]}.jpg')
                 # self.label.setPixmap(pixmap)
