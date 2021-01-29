@@ -1,4 +1,4 @@
-Celeberty Image Search
+Celebrity Image Search
 John Mar Shimun, Douglas Pattison, Alicia Sandoval
 CST 205
 12/14/2020
